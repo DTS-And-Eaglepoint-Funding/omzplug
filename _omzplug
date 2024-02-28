@@ -1,0 +1,16 @@
+#compdef omzplug
+local -a _omzplug_commands
+_omzplug_commands=(
+    "clone:download a plugin"
+    "help:show omzplug help"
+    "initfile:show the file that will be sourced to initialize a plugin"
+    "list:list all plugins"
+    "prompt:load a prompt plugin"
+    "pull:update a plugin, or all plugins"
+    "source:load a plugin"
+    "delete:delete a plugin"
+
+)
+
+_describe -t commands "omzplug subcommand" _omzplug_commands
+return 0
